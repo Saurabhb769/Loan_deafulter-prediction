@@ -1,0 +1,17 @@
+body{
+
+    background-color: rgb(171, 182, 178);
+    margin-top: 50px;
+
+}
+main{
+    font-size: large;
+    padding: 20PX;
+}
+input{
+    text-align: center;
+}
+header{
+    border: solid 2px black;
+    text-align: center;
+}

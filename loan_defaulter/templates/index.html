@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BANK LOAN PRIDICTION</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <H1>BAD LOAN PRIDICTION</H1>
+    </header>
+
+
+    <main>
+        <form action="{{url_for('predict')}}" method="post">
+            <p>
+                grade : <input type="text" name="grade" id="grade" required>
+            </p>
+
+            <P>
+
+                annual_inc : <input type="text" name="annual_inc" id="annual_inc" required>
+            </P>
+
+            <p>
+                short_emp : <input type="text" name="short_emp" id="short_emp" required>
+            </p>
+
+            <p>
+                emp_length_num : <input type="text" name="emp_length_num" id="emp_length_num" required>
+
+            </p>
+
+            <p>
+                home_ownership : <input type="text" name="home_ownership" id="home_ownership" required>
+
+            </p>
+
+            <p>
+                dti : <input type="text" name="dti" id="dti" required>
+            </p>
+
+            <p>
+                purpose: <input type="text" name="purpose" id="purpose" required>
+            </p>
+
+            <p>
+                term : <input type="text" name="term" id="term" required>
+            </p>
+
+            <p>
+                last_delinq_none : <input type="text" name="last_delinq_none" id="last_delinq_none" required>
+            </p>
+            <p>
+                revol_util : <input type="text" name="revol_util" id="revol_util" required>
+            </p>
+
+            <p>
+                total_rec_late_fee : <input type="text" name="total_rec_late_fee" id="total_rec_late_fee" required>
+            </p>
+
+            <p>
+                od_ratio : <input type="text" name="od_ratio" id="od_ratio" required>
+            </p>
+
+            <button type="submit"><b>predict</b></button>
+        </form>
+    </main>
+
+</body>
+
+</html>
